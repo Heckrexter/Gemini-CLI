@@ -12,9 +12,9 @@ if [ $? -eq 0 ]
         if [ $? -eq 0 ] 
             then
                 echo "Virtual environment created"
+                source geminivenv/bin/activate
                 # downloading and installing packages
                 echo "Downloading and installing packages"
-                source geminivenv/bin/activate
                 pip install -q -U google-generativeai
                 if [ $? -eq 0 ] 
                     then

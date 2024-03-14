@@ -1,4 +1,4 @@
 #!/bin/sh
 
-source /geminivenv/bin/activate
-python3 /gemini.py
+source $(pwd)/geminivenv/bin/activate
+python3 $(pwd)/gemini.py
