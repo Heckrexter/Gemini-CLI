@@ -19,14 +19,14 @@ This application serves to allow the user to access Google's [Gemini AI Chatbot]
     sh setup.sh
     ```
 
-4. To make the gemini command to trigger the CLI app add an alias to to .zshrc or .bash_profile depending on which shell you use. You can do with using nano or textedit.
+4. To make the gemini command to trigger the CLI app add an alias to to .zshrc or .bash_profile depending on which shell you use. You can use nano to do this.
     ```
     alias gemini='path/to/gemini.sh'
     ```
 
 5. Obtain the Gemini API key [here](https://makersuite.google.com/app/apikey)
 
-6. Create a file called key.py and paste the following line of code in it and replace the placeholder text with the Gemini API code.
+6. Create a file called key.py and paste the following line of code in it and replace the placeholder text with the Gemini API key.
     ```
     GOOGLE_API_KEY = "PlaceAPIKeyHere"
     ```
@@ -39,5 +39,5 @@ This application serves to allow the user to access Google's [Gemini AI Chatbot]
 
 ## Known limitations:-
 - Input backtracting is broken.
-- There is no Chat History therefore this is only ideal for single shoot and go questions.
-- No Proper text formatting, currently only displayng the raw text.
+- There is no chat history functionality therefore the chatbot has no memory of previous conversation or pompts.
+- No Proper text formatting, currently only displaying the raw text.
