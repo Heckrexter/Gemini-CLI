@@ -1,6 +1,3 @@
-import sys
-import pathlib
-import textwrap
 import google.generativeai as genai
 from key import GOOGLE_API_KEY
 

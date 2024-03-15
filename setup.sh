@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# creating final gemini file
+echo "Creating final gemini file"
+echo "#!/bin/sh\n\npath=$(pwd)\n$(cat geminiformat.sh)" > gemini.sh
+chmod +x gemini.sh
+
 # check for python3
 echo "Checking for python3"
 which python3
