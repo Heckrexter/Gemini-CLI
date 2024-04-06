@@ -35,7 +35,7 @@ This application serves to allow the user to access Google's [Gemini AI Chatbot]
     ```shell
     gemini
     ```
-8. **NOTE**: If you move the Gemini-CLI folder after setup you will have to edit the line 3 of the gemini.sh file. Replace the current path text with the new path for your folder.
+8. **NOTE**: If you move the Gemini-CLI folder after setup you will have to edit the line 3 of the gemini.sh file. Replace the current path text with the new path for your folder. Please also do the same in the historydb.py file
 
 ## Known limitations:-
 - Input backtracting is broken.
