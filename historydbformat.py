@@ -20,7 +20,6 @@ def get_messages():
     c = conn.cursor()
     c.execute('SELECT * FROM history')
     messages = c.fetchall()
-    print(messages)
     conn.close()
     if messages == []:
         return []
