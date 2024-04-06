@@ -1,6 +1,7 @@
 # initialize the database
+conpath = path + '/chathistory.db'
 def initdb():
-    conn = sqlite3.connect('chathistory.db')
+    conn = sqlite3.connect(conpath)
     c = conn.cursor()
     c.execute('CREATE TABLE IF NOT EXISTS history (role, parts)')
     conn.commit()
@@ -8,7 +9,7 @@ def initdb():
 
 # add entry
 def add_message(role, parts):
-    conn = sqlite3.connect('chathistory.db')
+    conn = sqlite3.connect(conpath)
     c = conn.cursor()
     c.execute('INSERT INTO history VALUES (?, ?)', (role, parts))
     conn.commit()
@@ -16,7 +17,7 @@ def add_message(role, parts):
 
 # retrieve entry
 def get_messages():
-    conn = sqlite3.connect('chathistory.db')
+    conn = sqlite3.connect(conpath)
     c = conn.cursor()
     c.execute('SELECT * FROM history')
     messages = c.fetchall()
@@ -34,7 +35,7 @@ def get_messages():
 
 # empty database
 def clear_messages():
-    conn = sqlite3.connect('chathistory.db')
+    conn = sqlite3.connect(conpath)
     c = conn.cursor()
     c.execute('DELETE FROM history')
     conn.commit()
