@@ -3,3 +3,5 @@ key.py
 testgem.sh
 geminivenv
 __pycache__
+chathistory.db
+historydb.py

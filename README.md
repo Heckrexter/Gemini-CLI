@@ -39,5 +39,4 @@ This application serves to allow the user to access Google's [Gemini AI Chatbot]
 
 ## Known limitations:-
 - Input backtracting is broken.
-- There is no chat history functionality therefore the chatbot has no memory of previous conversation or pompts.
 - No Proper text formatting, currently only displaying the raw text.

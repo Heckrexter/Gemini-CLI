@@ -5,6 +5,11 @@ echo "Creating final gemini file"
 echo "#!/bin/sh\n\npath=$(pwd)\n$(cat geminiformat.sh)" > gemini.sh
 chmod +x gemini.sh
 
+# creating historydb file
+echo "Creating historydb file"
+echo "import sqlite3\n\npath=\"$(pwd)\"\n$(cat historydbformat.py)" > historydb.py
+
+
 # check for python3
 echo "Checking for python3"
 which python3
